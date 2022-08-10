@@ -59,7 +59,6 @@ function Header() {
           <Link to="/about">关于</Link>
         </span>
       </nav>
-      <ChangeTheme />
     </header>
   );
 }

@@ -14,12 +14,18 @@ function changeVarColor(key) {
       "--headerShadowColor",
       "rgba(255, 255, 255, 0.2)"
     );
+    document.documentElement.style.setProperty("--themebg", "#565865");
+    document.documentElement.style.setProperty("--contentbg", "#111111");
+
+
   } else {
     document.documentElement.style.setProperty("--headerColor", "#262626");
     document.documentElement.style.setProperty(
       "--headerShadowColor",
       "rgba(0, 0, 0, 0.1)"
     );
+    document.documentElement.style.setProperty("--themebg", "#eef2f5");
+    document.documentElement.style.setProperty("--contentbg", "#f8f8f8");
   }
 }
 
@@ -89,7 +95,7 @@ function ChangeTheme() {
         <svg
           onClick={changeTheme}
           t="1660052451483"
-          className="icon icon-22"
+          className="icon"
           viewBox="0 0 1024 1024"
           version="1.1"
           xmlns="http://www.w3.org/2000/svg"
@@ -105,7 +111,7 @@ function ChangeTheme() {
       ) : (
         <svg
           t="1660054168863"
-          className="icon icon-22"
+          className="icon"
           onClick={changeTheme}
           viewBox="0 0 1024 1024"
           version="1.1"

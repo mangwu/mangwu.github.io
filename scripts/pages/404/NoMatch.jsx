@@ -1,3 +1,3 @@
 function NoMatch() {
-  return <img src="./404.png" alt="" srcset="" />;
+  return <img src="./images/404.png" />;
 }
