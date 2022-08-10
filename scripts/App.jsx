@@ -6,6 +6,7 @@
  * @copyright © 2021 wangzhihao, All rights reserved.
  */
 const { Button } = window.antd;
+
 /**
  * @description App
  * @class App
@@ -27,4 +28,4 @@ class App extends React.PureComponent {
     );
   }
 }
-ReactDOM.render(<App />, document.querySelector('#root'));
+ReactDOM.render(<App />, document.querySelector("#root"));

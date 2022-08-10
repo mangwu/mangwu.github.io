@@ -5,7 +5,22 @@
  * @date 2021-11-29 17:48:33
  * @copyright © 2021 wangzhihao, All rights reserved.
  */
-// const { Button } = antd
+const { BrowserRouter: Router, Route, Link } = ReactRouterDOM;
+function Home() {
+  return (
+    <div>
+      <h2>Home</h2>
+    </div>
+  );
+}
+function About() {
+  return (
+    <div>
+      <h2>About</h2>
+    </div>
+  );
+}
+
 /**
  * @description 布局
  * @function Layout
@@ -16,7 +31,12 @@ function Layout(props) {
   return (
     <React.Fragment>
       <Icon />
-      <Header></Header>
+      <Router>
+        <Header></Header>
+        <Route exact path="/" component={Home} />
+        <Route path="/about" component={About} />
+        <Route component={NoMatch} />
+      </Router>
     </React.Fragment>
   );
 }

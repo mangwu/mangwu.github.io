@@ -6,6 +6,8 @@
  * @copyright © 2021 wangzhihao, All rights reserved.
  */
 const { useState, useRef, useEffect } = React;
+const { BrowserRouter: Router, Route, Link } = ReactRouterDOM;
+const { width, height } = document.body.getBoundingClientRect();
 /**
  * @description
  * @function Header
@@ -49,6 +51,12 @@ function Header() {
           >
             blogs
           </a>
+        </span>
+        <span className="header-nav-item">
+          <Link to="/">主页</Link>
+        </span>
+        <span className="header-nav-item">
+          <Link to="/about">关于</Link>
         </span>
       </nav>
       <ChangeTheme />
