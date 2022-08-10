@@ -15,8 +15,8 @@
 function Layout(props) {
   return (
     <React.Fragment>
-      <Header>
-      </Header>
+      <Icon />
+      <Header></Header>
     </React.Fragment>
   );
 }

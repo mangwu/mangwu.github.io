@@ -1,4 +1,5 @@
 @import url(./colors.css);
+@import url(./variable.css);
 .header {
   display: flex;
   height: 64px;
@@ -9,6 +10,7 @@
 }
 .logo {
   line-height: 64px;
+  margin: 0 8px;
 }
 .header-nav {
   font-size: 16px;
@@ -32,9 +34,24 @@
   color: var(--headerColor);
 }
 .header-nav-item a:hover {
-  color: #1890ff;
+  color: var(--primaryColor);
 }
 
 .change-theme {
   line-height: 64px;
+}
+
+.github-svg {
+  font-family: var(--notion-font);
+  width: 64px;
+  height: 64px;
+  box-sizing: border-box;
+  fill: #70b7fd;
+  color: #fff;
+  position: absolute;
+  z-index: 1001;
+  top: 0;
+  right: 0;
+  border: 0;
+  transform: scale(1, 1);
 }

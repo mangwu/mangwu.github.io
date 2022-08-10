@@ -16,7 +16,11 @@ function Header() {
   return (
     <header className="header">
       <div className="logo">
-        <antd.Avatar size={64} src="https://joeschmoe.io/api/v1/random" />
+        <antd.Avatar
+          size={48}
+          src="https://joeschmoe.io/api/v1/random"
+          alt="logo"
+        />
       </div>
       <nav className="header-nav">
         <span className="header-nav-item">
@@ -35,6 +39,15 @@ function Header() {
             rel="noopener noreferrer"
           >
             github
+          </a>
+        </span>
+        <span className="header-nav-item">
+          <a
+            href="https://mangwu-blogs.vercel.app"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            blogs
           </a>
         </span>
       </nav>
